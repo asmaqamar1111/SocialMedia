@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Social Media Post</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a4f4bdf7c1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="post.css" />
+  </head>
+  <body>
+    <div class="card box mx-auto m-5 col-8 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+      <div class="media">
+        <img
+          class="d-flex mr-3 profileImg"
+          data-src="holder.js/64x64?theme=sky"
+          alt="64x64"
+          src="97108445_601121467163466_1516021153661976576_n.jpg"
+          data-holder-rendered="true"
+        />
+        <div class="media-body">
+          <h6 class="h6Head">Asma Qamar</h6>
+          <h6 class="h6Des">
+            “Everything has its beauty, but not everyone sees it.”
+            <span class="writer">#Andy Warhol.</span>
+          </h6>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-three-dots menuIcons"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+          />
+        </svg>
+      </div>
+
+      <!-- <img
+        class="image img-fluid mx-auto"
+        src="https://i.pinimg.com/564x/a4/90/f9/a490f9391c86dcf636b60342a3d610b9.jpg"
+        width="300"
+        height="350"
+        alt="Card image"
+      /> -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/564x/06/b5/d4/06b5d4dbaa9a8d401abee139abe665b8.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/52/7f/e4/527fe4f293d0644a35fa97cb1937d821.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/17/66/bf/1766bfe6c8893bb1b396901d0713fba9.jpg" class="d-block w-100" height="400px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/6c/d8/d6/6cd8d603ad76767cfab8117fecc8ce98.jpg" class="d-block w-100" height="400px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/c4/e4/7d/c4e47d2c8bbfeae1b560dcab07b5f438.jpg" class="d-block w-100" height="400px" alt="...">
+          </div>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-between iconContainer">
+        <div class="p-2">
+          <span class="container">
+            <i id="heart" class="far fa-heart heart" onclick="heart()"></i
+          ></span>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            onclick="chat()"
+            id="chat"
+            class="bi bi-chat chat"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"
+            />
+          </svg>
+
+          <p style="display: inline" id="noInc"></p>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-send send"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+            />
+          </svg>
+        </div>
+
+        <div class="p-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-three-dots iconDots dot"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-three-dots dot"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+            />
+          </svg>
+        </div>
+
+        <div class="p-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-bookmark bookmark"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+            />
+          </svg>
+        </div>
+      </div>
+      <p id="like" class="like"></p>
+      <ul id="ulChat"></ul>
+      <p id="input"></p>
+      <div class="d-flex justify-content-between iconContainer">
+        <div id="date" class="dat"></div>
+      </div>
+    </div>
+
+    <script>
+      var getText;
+      var i = 0;
+      var z = 0;
+      var iconBtn = document.getElementById("heart");
+
+      const d = new Date();
+      // // const month = ["1","2","3","4","5","6","7","8","9","10","11","12"];
+
+      // // let mon = month[d.getMonth()];
+      // // let date = d.getDate();
+      // // let year = d.getFullYear();
+      // // let time = d.getTime();
+
+      // // console.log(d)
+      // // console.log(mon)
+      // // console.log(date)
+      // // console.log(year)
+      // // console.log(time)
+
+      // document.getElementById("date").innerHTML =
+      //   d.toDateString() +
+      //   "-" +
+      //   d.getHours() +
+      //   ":" +
+      //   d.getSeconds() +
+      //   ":" +
+      //   d.getMinutes();
+
+      let y = d.toLocaleString();
+      document.getElementById("date").innerHTML = y;
+
+      // only date
+      // document.getElementById("date").innerHTML =
+      //   mon + "/" + date + "/" + year;
+
+      function heart() {
+        if (iconBtn.classList.contains("far")) {
+          iconBtn.classList.add("fas");
+          iconBtn.classList.remove("far");
+          document.getElementById("like").innerHTML = "Liked by " + ++z;
+        } else {
+          iconBtn.classList.add("far");
+          iconBtn.classList.remove("fas");
+          document.getElementById("like").innerHTML = "Liked by " + --z;
+        }
+      }
+
+      function chat() {
+        document.getElementById("input").innerHTML =
+          '<input type="test" id="text" class="text" placeholder="Type a message"><button type="button" id="btn" class="btn btn-dark sendBtn" onclick="btn()" onclick="return validation()">Send</button>';
+      }
+
+      function btn() {
+        i++;
+
+        document.getElementById("noInc").innerHTML = "(" + i + ")";
+
+        getText = document.getElementById("text").value;
+
+        document.getElementById("ulChat").innerHTML +=
+          "<li>" + getText + "</li><br><br>";
+
+        document.getElementById("text").value = "";
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a4f4bdf7c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

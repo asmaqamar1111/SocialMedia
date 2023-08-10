@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* height: 100vh; */
+  background: linear-gradient(to top left, #cc00ff 0%, #ff9933 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image {
+  /* width: 300px;
+  height: 350px; */
+  margin-left: 18px;
+}
+.profileImg {
+  border-radius: 100px;
+  width: 45px;
+  height: 46px;
+  margin: 10px 10px 10px 18px;
+}
+.h6Head {
+  font-family: inherit;
+  font-size: medium;
+  margin-top: 10px;
+}
+.h6Des {
+  font-family: inherit;
+  font-size: smaller;
+  margin-top: -3px;
+}
+.menuIcons {
+  margin: 26px 22px 10px 10px;
+}
+.chat {
+  margin-top: -12px;
+}
+.send {
+  margin-top: -11px;
+}
+.dot {
+  margin: 0px 10px 0px 0px;
+}
+.iconContainer {
+  margin: 0px 8px 8px 11px;
+}
+.iconDots {
+  margin: 0px -14px 0px -29px;
+}
+.text {
+  padding: 5px 2px 5px 14px;
+  margin: 10px 11px 10px 36px;
+  border-radius: 12px;
+}
+.sendBtn {
+  border-radius: 10px;
+  border: 0;
+  background: linear-gradient(
+    to left top,
+    rgb(67 43 72) 0%,
+    rgb(141 140 139) 100%
+  );
+  margin: -4px 0px -1px -6px;
+}
+ul {
+  list-style: none;
+  margin: 29px 5px 0px 6px;
+}
+li {
+  background-color: #818283;
+  background: linear-gradient(to top left, #919191 0%, #54483b 100%);
+  display: inline-block;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  padding: 5px;
+  line-height: 40px;
+  color: white;
+}
+#noInc {
+  font-size: 11px;
+  font-family: sans-serif;
+  text-align: justify;
+}
+.writer {
+  color: rgb(51, 0, 255);
+}
+.like{
+    margin: -11px 0px 0px 23px;
+    font-size: smaller;
+}
+.dat{
+    /* margin: -11px 0px 0px 23px; */
+    font-size: smaller;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+}
+.container i {
+  font-size: 26px;
+  display: inline;
+}
+.container:hover i {
+  font-size: 26px;
+  display: inline;
+  color: red;
+}
+.far{
+  color: #000;
+}
+.fas{
+  color: red;
+}
